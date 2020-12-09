@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="desafio2/estudoflix.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+
+  <!--Responsividade-->
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <!--Owl CSS-->
+  <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+  <title>Estudoflix</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">ESTUDOFLIX</h2>
+      <nav>
+        <a href="#">Início</a>
+        <a href="https://www.udemy.com/">Cursos</a>
+        <a href="https://www.linkedin.com/in/marcel-henrique-alves-pedroso/">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="cartaz">
+      <div class="container">
+        <h3 class="titulo">Bootcamp Full Stack Developer</h3>
+        <p class="descricao">Venha ser um full stack developers, um profissional multifuncional, que entende e conhece de diferentes tecnologias voltada ao desenvolvimento de software. Está subdividida em: back-end, front-end, banco de dados, devops e mobile. Bootcamp abrangente e atualizado com o que há de mais requisitado pelo mercado</p>
+        <div class="botoes">
+            <button role="button" class="botao" onclick=iniciaragora()>
+              <i class="fas fa-play"></i>
+              INICIAR AGORA
+            </button>
+            <button role="button" class="botao" onclick=information()>
+              <i class="fas fa-info-circle"></i>
+              MAIS INFORMAÇÕES
+            </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="carrosel-cursos">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/dio.jpg" onclick=dio() alt="Digital Innovation One" srcset="">
+      </div>
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/curso.jpg" onclick=curso() alt="Curso em Vídeo" srcset="">
+      </div>
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/rocket.jpg" onclick=rocket() alt="Rocketseat" srcset="">
+      </div>
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/filipe.jpg" onclick=filipe() alt="Filipe Deschamps" srcset="">
+      </div>
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/eu.jpg" onclick=eu() alt="Eu Capacito" srcset="">
+      </div>
+      <div class="item">
+        <img class="box-curso" src="/EstudoFlix/img/digital.jpg" onclick=digital() alt="Digital Hack" srcset="">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/764b75931d.js" crossorigin="anonymous"></script>
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+  <script src="js/owl/setup.js"></script>
+
+</body>
+</html>
